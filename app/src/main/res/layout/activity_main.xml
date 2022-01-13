@@ -20,7 +20,7 @@
         android:id="@+id/button"
         android:layout_width="135dp"
         android:layout_height="85dp"
-        android:text="Button"
+        android:text="Neww Button"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
