@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@color/black"
+    android:columnCount="3"
+    android:rowCount="5"
+    tools:context=".differentLayout.GridLayoutActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:maxWidth="25dp"
+        android:maxHeight="25dp"
+        android:text="Hello" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="2"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_row="3"
+        android:layout_rowWeight="1"
+        android:layout_column="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="25" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowSpan="2"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="25" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_gravity="fill"
+        android:layout_margin="10dp"
+        android:text="1" />
+
+</GridLayout>

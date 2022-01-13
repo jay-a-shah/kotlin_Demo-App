@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".differentLayout.LayoutActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_differentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="Different Types of Layout"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/purple_500"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_layout_include"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/relativeLayoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/button_border"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/relative_layout_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/different_layout_btn"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/textview_differentLayout" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/linearLayoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/button_border"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/linear_layout_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/different_layout_btn"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/relativeLayoutBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/constraintLayoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/button_border"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/constraint_layout_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/different_layout_btn"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/linearLayoutBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/gridLayoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/button_border"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/grid_layout_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/different_layout_btn"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/constraintLayoutBtn" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/frameLayoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:background="@drawable/button_border"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/frame_layout_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/different_layout_btn"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/gridLayoutBtn" />
+
+    <include
+        android:id="@+id/toolbar_layout_include"
+        layout="@layout/toolbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_light_color">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        tools:context=".listView_ViewPager.ListViewActivity">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/list_view_btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_simple_list_view"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/list_view_btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_list_view_with_array"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/list_view_btn_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_list_view_with_custom_layout"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/recyclerViewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_recycler_view"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/recyclerViewGridLayoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_recycler_view_with_grid_layout"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/viewPagerLayoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_view_pager"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/viewPagerTwoLayoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_view_pager_2"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bottomNavigationLayoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_bottom_navigation"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/viewPagerTwoRecyclerAdapterBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_view_pager_with_recycler_adapter"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/expandableListViewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_expandable_list_view"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/expandableRecyclerViewBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_border"
+            android:text="@string/btn_expandable_recycler_view"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customToastLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_toast_background"
+    android:orientation="vertical"
+    android:paddingStart="5dp"
+    android:paddingTop="10dp"
+    android:paddingEnd="5dp"
+    android:paddingBottom="10dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageView_custom_toast"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/ic_submit_custom_toast" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/customtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/custom_Toast_Text"
+        android:textColor="@color/custom_toast_text"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/imageView_custom_toast" />
+</androidx.constraintlayout.widget.ConstraintLayout>
