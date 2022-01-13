@@ -14,6 +14,22 @@
             android:exported="false"
             android:parentActivityName=".differentLayout.LayoutActivity" />
         <activity
+            android:name=".differentLayout.RelativeLayoutActivity"
+            android:exported="false"
+            android:parentActivityName=".differentLayout.LayoutActivity" />
+        <activity
+            android:name=".differentLayout.ConstraintLayoutActivity"
+            android:exported="false"
+            android:parentActivityName=".differentLayout.LayoutActivity" />
+        <activity
+            android:name=".differentLayout.GridLayoutActivity"
+            android:exported="false"
+            android:parentActivityName=".differentLayout.LayoutActivity" />
+        <activity
+            android:name=".differentLayout.FrameLayoutActivity"
+            android:exported="false"
+            android:parentActivityName=".differentLayout.LayoutActivity" />
+        <activity
             android:name=".differentLayout.LayoutActivity"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
