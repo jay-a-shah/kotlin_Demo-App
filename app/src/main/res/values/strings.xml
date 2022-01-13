@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">DemoAppkotlin</string>
+    <string name="all_toast_btn">Android Ui &amp; All Toasts</string>
+    <string name="android_btn">Android UI</string>
+    <string name="radiobtn_male">Male</string>
+    <string name="radiobtn_female">Female</string>
+    <string name="textview_pref">Your Prefrences</string>
+    <string name="checkbox_kotlin">Kotlin</string>
+    <string name="checkbox_ios">IOS</string>
+    <string name="checkbox_angular">Angular Js</string>
+    <string name="btn_submit">Submit</string>
+    <string name="custom_toast_text">All Done</string>
+    <string name="android_ui_button">New Button</string>
+    <string name="basic_kotlin_gender_textview">Gender:-</string>
+    <string name="toast_normal">Moving Towards new Activity</string>
+    <string name="edittext_phone_hint">Enter Phone</string>
+    <string name="edittext_email_hint">Enter Email</string>
+    <string name="edittext_name_hint">Enter Name</string>
+    <string name="txtview_registration_form">Registration Form</string>
 </resources>

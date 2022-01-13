@@ -4,6 +4,216 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BasicsKotlin">
+    tools:context=".BasicsKotlin"
+    tools:ignore="ExtraText">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/Textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/textview"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/txtview_registration_form"
+        android:textColor="@color/purple"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/edittext_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/edittext_name_hint"
+        android:inputType="textPersonName"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:singleLine="false"
+        android:textColorHint="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Textview" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext_email"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:gravity="center"
+        android:hint="@string/edittext_email_hint"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_name" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittext_phone"
+        android:layout_width="345dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="28dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:ems="10"
+        android:hint="@string/edittext_phone_hint"
+        android:inputType="phone"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColorHint="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_email" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/basic_kotlin_gender_textview"
+        android:textColor="@color/purple"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.123"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edittext_phone" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textview_gender"
+        app:layout_constraintTop_toBottomOf="@+id/edittext_phone">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radiobtn_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="5dp"
+            android:checked="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/radiobtn_male"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radiobtn_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:text="@string/radiobtn_female"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/purple"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_prefrences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@color/textview"
+        android:text="@string/textview_pref"
+        android:textColor="@color/prefrences"
+        android:textSize="33sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radio_group" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox_kotlin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/checkbox_kotlin"
+        android:textColor="#055719"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:flow_horizontalBias="0.3"
+        app:layout_constraintBottom_toBottomOf="@id/checkbox_ios"
+        app:layout_constraintEnd_toEndOf="@id/checkbox_ios"
+        app:layout_constraintHorizontal_bias="0.249"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_prefrences"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox_ios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/checkbox_ios"
+        android:textColor="#055719"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/checkbox_kotlin"
+        app:layout_constraintTop_toBottomOf="@id/textview_prefrences" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox_angular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/checkbox_angular"
+        android:textColor="#055719"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/checkbox_ios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toEndOf="@id/checkbox_ios"
+        app:layout_constraintTop_toBottomOf="@id/textview_prefrences"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:fontFamily="sans-serif-condensed"
+        android:foreground="?android:attr/selectableItemBackgroundBorderless"
+        android:text="@string/btn_submit"
+        android:textAllCaps="false"
+        android:textColor="@color/purple"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_ios"
+        app:layout_constraintVertical_bias="0.4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,9 +1,13 @@
 package com.example.demoappkotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Gravity
+import android.widget.Button
 import android.widget.Toast
+import com.example.demoappkotlin.constant.zero
 import kotlin.math.pow
 import kotlin.reflect.KFunction2
 
@@ -11,18 +15,38 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        //Android Ui and All Toast Button to transfer to basic kotlin Activity with Custom Toast
+        val nextbutton = findViewById<Button>(R.id.btn_main)
+        nextbutton.setOnClickListener {
+            val intent = Intent(applicationContext, BasicsKotlin::class.java)
+            startActivity(intent)
+        }
+        //Android Ui Button with Normal toast
+        val androiduibtn = findViewById<Button>(R.id.android_ui_btn)
+        androiduibtn.setOnClickListener {
+            val normalToast = Toast.makeText(
+                applicationContext, getString(R.string.toast_normal),
+                Toast.LENGTH_SHORT
+            )
+            normalToast.setGravity(Gravity.CENTER_VERTICAL, zero, zero)
+            normalToast.show()
+            val intent = Intent(applicationContext, AndroidUI::class.java)
+            startActivity(intent)
+        }
 
         Log.d("Number", "Hello world")
         //functions
         fun sum(a: Int, b: Int): Int {
             return a + b
         }
+
         val z = sum(2, 6)
         Log.d("Functions", z.toString())
         //Classes
         class Rectangle(var height: Double, var Breadth: Double) {
             var perimeter = (height + Breadth * 2).toString()
         }
+
         var rectangle = Rectangle(6.0, 2.0)
         Log.d("Class", rectangle.perimeter)
         //Operators
@@ -74,12 +98,14 @@ class MainActivity : AppCompatActivity() {
                 Log.d("Inheri", "I am in Parent")
             }
         }
+
         class Child : Parent() {
             val name2: String = ""
             fun myMethod2() {
                 Log.d("Inheri", "I am in chile")
             }
         }
+
         val objchild = Child()
         objchild.myMethod2()
         objchild.myMethod()
@@ -89,15 +115,18 @@ class MainActivity : AppCompatActivity() {
             val size = 2
             open fun display() = Log.d("Overiding", "In Parent Class")
         }
+
         class Oneplus : Mobile() {
             override fun display() = Log.d("Overriding", "In sub Class")
         }
+
         val oneplus = Oneplus()
         oneplus.display()
         //Function Types
         fun sum1(e1: Int, e2: Int): Int {
             return e1 + e2
         }
+
         fun power(e1: Double, e2: Double): Double {
             return e1.pow(e2)
         }
@@ -121,40 +150,39 @@ class MainActivity : AppCompatActivity() {
         }
         multilinelambda()   //here last entity will be its return type
         Log.d("Lambda", multilinelambda().toString())
-
         //Null Safety and Elvis Function
         var gender: String = "Male"
         var gender2: String? = null
         var isAdult: Boolean? = null
         Log.d("Null", gender)
         //Log.d("Null1", gender2?.uppercase())
-        if(gender2 != null) {
+        if (gender2 != null) {
             Toast.makeText(this, gender2, Toast.LENGTH_SHORT).show()
         }
         var selecteditem = gender2 ?: "NA"  //Elvis function
         Log.d("Null", selecteditem)
         //Data Class
-
         data class Person1(val id: Int, val name: String) {
         }
+
         val o1 = Person1(2, "John")
         val o2 = Person1(1, "John")
         Log.d("Data Class", o1.equals(o2).toString())
         val o3 = o1.copy(id = 3)
         Log.d("Data", o3.toString())
-
         //Extension Function
         class Student {
             fun isPassed(mark: Int): Boolean {
                 return mark > 35
             }
         }
+
         fun Student.isBrilliant(mark: Int): Boolean {
             return mark > 85
         }
+
         val student = Student()
         Log.d("Exten", student.isBrilliant(95).toString())
-
         //lateinit and Lazy
         val pi: Float by lazy { 3.14f }
         val area1 = 4 * pi * 4
@@ -162,9 +190,11 @@ class MainActivity : AppCompatActivity() {
         class Country {
             lateinit var name: String
         }
+
         val country = Country()
         country.name = "India"
         Log.d("Lateinit", country.name)
+
         //Lists
         val nums = listOf<Int>(1, 2, 3, 4, 5)
         Log.d("Lists", nums.indexOf(4).toString())

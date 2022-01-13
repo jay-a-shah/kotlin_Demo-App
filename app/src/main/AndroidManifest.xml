@@ -9,6 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoAppkotlin">
+        <activity android:name=".AndroidUI"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".BasicsKotlin"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".BasicsKotlin"
+            android:exported="false" />
+        <activity
+            android:name=".BasicsKotlin"
+            android:exported="false" />
         <activity
             android:name=".BasicsKotlin"
             android:exported="false" />
