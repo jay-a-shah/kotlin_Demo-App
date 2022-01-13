@@ -121,5 +121,11 @@
     <string name="title_people_recycler_view_with_grid_layout">People</string>
     <string name="btn_fragment_one">Fragment 1</string>
     <string name="btn_fragment_two">Fragment 2</string>
-    <string name="btn_fragment_two">Fragment 2</string>
+    <string name="btn_activity_lifecycle">Activity LifeCycle</string>
+    <string name="btn_implicit_intent">Implicit Intent</string>
+    <string name="btn_data_passing_activity">Data Passing Activity</string>
+    <string name="btn_take_photo">Take Photo</string>
+    <string name="hint_write_anything">Write Anything</string>
+    <string name="label_putextra">Extra</string>
+    <string name="image_type">image/*</string>
 </resources>

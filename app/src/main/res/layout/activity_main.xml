@@ -76,4 +76,55 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/btnDifferentLayout" />
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnActivityLifecycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/btn_activity_lifecycle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/text_color_mainActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnListViewAndRecyclerView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnImplicitIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/btn_implicit_intent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/text_color_mainActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnActivityLifecycle" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDataPassingActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/btn_data_passing_activity"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/text_color_mainActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnImplicitIntent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,6 +7,9 @@ import android.util.Log
 import android.view.Gravity
 import android.widget.Button
 import android.widget.Toast
+import com.example.demoappkotlin.activityAndFragments.ActivityLifecycle
+import com.example.demoappkotlin.activityAndFragments.DataPassingActivityOne
+import com.example.demoappkotlin.activityAndFragments.ImplicitIntent
 import com.example.demoappkotlin.differentLayout.LayoutActivity
 import com.example.demoappkotlin.listView_ViewPager.ListViewActivity
 import com.example.demoappkotlin.utils.ZERO
@@ -27,10 +30,7 @@ class MainActivity : AppCompatActivity() {
         //Android Ui Button with Normal toast
         val btnAndroidUI = findViewById<Button>(R.id.btnAndroidUi)
         btnAndroidUI.setOnClickListener {
-            val normalToast = Toast.makeText(
-                applicationContext, getString(R.string.toast_normal),
-                Toast.LENGTH_SHORT
-            )
+            val normalToast = Toast.makeText(applicationContext, getString(R.string.toast_normal), Toast.LENGTH_SHORT)
             normalToast.apply {
                 setGravity(Gravity.TOP, ZERO, ZERO)
                 show()
@@ -49,6 +49,22 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, ListViewActivity::class.java)
             startActivity(intent)
         }
+        val activityLifecycleBtn = findViewById<Button>(R.id.btnActivityLifecycle)
+        activityLifecycleBtn.setOnClickListener {
+            val intent = Intent(applicationContext, ActivityLifecycle::class.java)
+            startActivity(intent)
+        }
+        val btnImplicitIntent = findViewById<Button>(R.id.btnImplicitIntent)
+        btnImplicitIntent.setOnClickListener {
+            val intent = Intent(applicationContext, ImplicitIntent::class.java)
+            startActivity(intent)
+        }
+        val btnDataPassingActivity = findViewById<Button>(R.id.btnDataPassingActivity)
+        btnDataPassingActivity.setOnClickListener {
+            val intent = Intent(applicationContext, DataPassingActivityOne::class.java)
+            startActivity(intent)
+        }
+
         //functions
         fun sum(a: Int, b: Int): Int {
             return a + b

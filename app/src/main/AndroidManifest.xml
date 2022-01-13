@@ -11,64 +11,76 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoAppkotlin">
         <activity
-            android:name=".listView_ViewPager.ExpandableRecyclerViewActivity"
-            android:label="@string/title_expandable_recycler_view"
-            android:parentActivityName=".listView_ViewPager.ListViewActivity"
+            android:name=".activityAndFragments.DataPassingTwoActivity"
             android:exported="false" />
+        <activity
+            android:name=".activityAndFragments.DataPassingActivityOne"
+            android:exported="false" />
+        <activity
+            android:name=".activityAndFragments.ImplicitIntent"
+            android:exported="false" />
+        <activity
+            android:name=".activityAndFragments.ActivityLifecycle"
+            android:exported="false" />
+        <activity
+            android:name=".listView_ViewPager.ExpandableRecyclerViewActivity"
+            android:exported="false"
+            android:label="@string/title_expandable_recycler_view"
+            android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.ExpandableListViewActivity"
+            android:exported="false"
             android:label="@string/title_expandable_list_view"
-            android:parentActivityName=".listView_ViewPager.ListViewActivity"
-            android:exported="false" />
+            android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.ViewPagerThreeActivity"
+            android:exported="false"
             android:label="@string/title_swipable_list_view"
-            android:parentActivityName=".listView_ViewPager.ListViewActivity"
-            android:exported="false" />
+            android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.BottomNavigationActivity"
+            android:exported="false"
             android:label="@string/title_bottom_navigation"
-            android:parentActivityName=".listView_ViewPager.ListViewActivity"
-            android:exported="false" />
+            android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.ViewPagerTwoActivity"
+            android:exported="false"
             android:label="@string/title_view_pager_two"
-            android:parentActivityName=".listView_ViewPager.ListViewActivity"
-            android:exported="false" />
+            android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.ViewPagerActivity"
+            android:exported="false"
             android:label="@string/title_view_pager"
-            android:parentActivityName=".listView_ViewPager.ListViewActivity"
-            android:exported="false" />
+            android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.RecyclerViewWithGridLayoutActivity"
+            android:exported="false"
             android:label="@string/title_recycler_view_grid_layout"
-            android:parentActivityName=".listView_ViewPager.ListViewActivity"
-            android:exported="false" />
+            android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.RecyclerViewActivity"
+            android:exported="false"
             android:label="@string/title_recycler_view"
-            android:parentActivityName=".listView_ViewPager.ListViewActivity"
-            android:exported="false" />
+            android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.CustomListViewActivity"
-            android:label="@string/title_custom_list_view"
             android:exported="false"
+            android:label="@string/title_custom_list_view"
             android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.SimpleListViewWithArrayActivity"
-            android:label="@string/title_list_view"
             android:exported="false"
+            android:label="@string/title_list_view"
             android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.SimpleListViewActivity"
-            android:label="@string/title_simple_list_view"
             android:exported="false"
+            android:label="@string/title_simple_list_view"
             android:parentActivityName=".listView_ViewPager.ListViewActivity" />
         <activity
             android:name=".listView_ViewPager.ListViewActivity"
-            android:label="@string/title_list_view_activity"
             android:exported="false"
+            android:label="@string/title_list_view_activity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".differentLayout.FrameLayoutActivity"
@@ -106,7 +118,6 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
