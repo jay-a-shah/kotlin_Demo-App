@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".differentLayout.RelativeLayoutActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/Relative_layout_heading"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/light_grey" />
+
+    <View
+        android:id="@+id/spaces"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/textview_heading"
+        android:layout_centerHorizontal="true" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_heading"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@id/spaces"
+        android:background="@drawable/layout_elements_background"
+        android:hint="@string/name_hint"
+        android:padding="18sp"
+        android:textColorHint="@color/text_color_hint" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spaces"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/editTextName"
+        android:background="@drawable/layout_elements_background"
+        android:hint="@string/e_mail_hint"
+        android:padding="18dp"
+        android:textColorHint="@color/text_color_hint" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner_relative_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEmail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layout_elements_background"
+        android:entries="@array/option"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="18dp"
+        android:spinnerMode="dropdown" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/multiLineEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_relative_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layout_elements_background"
+        android:foregroundGravity="center"
+        android:hint="@string/multiline_hint"
+        android:lines="5"
+        android:maxLines="4"
+        android:padding="18dp"
+        android:textColorHint="@color/text_color_hint" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkboxRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/multiLineEditText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:buttonTint="@color/text_color_hint"
+        android:padding="5dp"
+        android:text="@string/checkboxLayoutText"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/light_grey" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkboxRelativeLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/layout_elements_background"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:padding="18dp"
+        android:text="@string/send_feedback_btn"
+        android:textAllCaps="false"
+        android:textColor="@color/text_color_hint"
+        android:textSize="19sp" />
+
+</RelativeLayout>

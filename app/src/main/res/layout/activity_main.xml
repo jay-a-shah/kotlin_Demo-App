@@ -4,26 +4,129 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:foregroundGravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"
-        android:layout_width="135dp"
-        android:layout_height="85dp"
-        android:text="Button"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/jay_shah"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#2196F3"
+        android:typeface="normal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="320dp"
+        android:layout_height="318dp"
+        android:layout_marginBottom="36dp"
+        android:adjustViewBounds="false"
+        android:alpha="0.9"
+        android:background="#1D4706"
+        android:clickable="false"
+        android:cropToPadding="false"
+        android:longClickable="false"
+        android:paddingStart="20dp"
+        android:paddingRight="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/different_layout_activity_btn"
+        app:layout_constraintVertical_bias="0.684" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/android_ui_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/android_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/text_color_mainActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/different_layout_activity_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_border"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:text="@string/different_layout_btn"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/text_color_mainActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/android_ui_btn" />
+
+    <ScrollView
+        android:layout_width="328dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="8dp"
+        android:fillViewport="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="272dp"
+        android:checked="false"
+        android:gravity="center"
+        android:showText="true"
+        android:text="Switch"
+        android:textColor="#5C0E0E"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:thumbTint="#501010"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
