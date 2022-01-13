@@ -1,8 +1,10 @@
 package com.example.demoappkotlin
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Parcelable
 import android.util.Log
 import android.view.Gravity
 import android.widget.Button
@@ -10,6 +12,7 @@ import android.widget.Toast
 import com.example.demoappkotlin.activityAndFragments.ActivityLifecycle
 import com.example.demoappkotlin.activityAndFragments.DataPassingActivityOne
 import com.example.demoappkotlin.activityAndFragments.ImplicitIntent
+import com.example.demoappkotlin.activityAndFragments.JetPackNavigationActivity
 import com.example.demoappkotlin.differentLayout.LayoutActivity
 import com.example.demoappkotlin.listView_ViewPager.ListViewActivity
 import com.example.demoappkotlin.utils.ZERO
@@ -64,7 +67,16 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, DataPassingActivityOne::class.java)
             startActivity(intent)
         }
-
+        val btnJetPackNavComponent = findViewById<Button>(R.id.btnJetPackNavComponent)
+        btnJetPackNavComponent.setOnClickListener {
+            val intent = Intent(applicationContext, JetPackNavigationActivity::class.java)
+            startActivity(intent)
+        }
+        (intent.getParcelableExtra<Parcelable>(Intent.EXTRA_STREAM) as? Uri)?.let {
+            val intent = Intent(applicationContext,ImplicitIntent::class.java)
+            intent.putExtra(getString(R.string.key_implicit_intent),it)
+            startActivity(intent)
+        }
         //functions
         fun sum(a: Int, b: Int): Int {
             return a + b

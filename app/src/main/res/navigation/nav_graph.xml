@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/galleryFragmentJetPackNavCompose">
+
+    <fragment
+        android:id="@+id/galleryFragmentJetPackNavCompose"
+        android:name="com.example.demoappkotlin.listView_ViewPager.Fragments.GalleryFragment"
+        android:label="@string/label_gallery_fragment"
+        tools:layout="@layout/fragment_gallery">
+        <action
+            android:id="@+id/action_galleryFragment_to_addMessageFragment"
+            app:destination="@id/addMessageFragmentJetPackNavCompose"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addMessageFragmentJetPackNavCompose"
+        android:name="com.example.demoappkotlin.listView_ViewPager.Fragments.AddMessageWithSafeArgs"
+        android:label="@string/label_add_message"
+        tools:layout="@layout/fragment_add_message">
+        <action
+            android:id="@+id/action_addMessageFragment_to_viewMessageFragment"
+            app:destination="@id/viewMessageJetPackNavCompose" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/viewMessageJetPackNavCompose"
+        android:name="com.example.demoappkotlin.listView_ViewPager.Fragments.ViewMessageWithSafeArgs"
+        android:label="@string/label_view_message"
+        tools:layout="@layout/fragment_view_message">
+        <action
+            android:id="@+id/action_viewMessageFragment_to_galleryFragment"
+            app:popUpTo="@id/galleryFragmentJetPackNavCompose" />
+        <action
+            android:id="@+id/action_viewMessageFragment_to_addMessageFragment"
+            app:popUpTo="@id/addMessageFragmentJetPackNavCompose" />
+        <argument
+            android:name="dataIn"
+            android:defaultValue="hello"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
