@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/teal_700"/>
+                    <stroke android:color="@color/prefrences"
+                        android:width="4dp"/>
+                    <corners android:radius="4dp"/>
+                </shape>
+            </item>
+            <item
+                android:drawable="@drawable/ic_baseline_arrow"
+                android:gravity="center_vertical|right"
+                android:right="9dp"/>
+
+        </layer-list>
+    </item>
+</selector>

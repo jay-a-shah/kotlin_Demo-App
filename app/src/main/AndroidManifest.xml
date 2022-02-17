@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoAppkotlin">
         <activity
+            android:name=".differentLayout.LinearLayoutActivity"
+            android:exported="false"
+            android:parentActivityName=".differentLayout.LayoutActivity" />
+        <activity
+            android:name=".differentLayout.LayoutActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AndroidUI"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BasicsKotlin"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
