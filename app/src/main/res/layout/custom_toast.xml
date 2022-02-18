@@ -18,7 +18,7 @@
         android:src="@drawable/ic_submit_custom_toast" />
 
     <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/customtextview"
+        android:id="@+id/customTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"

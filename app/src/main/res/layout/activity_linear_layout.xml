@@ -88,4 +88,5 @@
         android:padding="13dp"
         android:text="@string/send_feedback_btn"
         android:textAllCaps="false" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>
