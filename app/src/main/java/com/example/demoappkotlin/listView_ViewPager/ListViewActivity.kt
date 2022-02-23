@@ -11,7 +11,6 @@ class ListViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list_view)
-
         val btnListView = findViewById<Button>(R.id.btnListViewOne)
         btnListView.setOnClickListener {
             val intent = Intent(applicationContext, SimpleListViewActivity::class.java)
@@ -32,39 +31,9 @@ class ListViewActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, RecyclerViewActivity::class.java)
             startActivity(intent)
         }
-        val btnRecyclerViewGridLayout = findViewById<Button>(R.id.btnRecyclerViewGridLayout)
-        btnRecyclerViewGridLayout.setOnClickListener {
-            val intent = Intent(applicationContext, RecyclerViewWithGridLayoutActivity::class.java)
-            startActivity(intent)
-        }
-        val btnViewPager = findViewById<Button>(R.id.btnViewPager)
-        btnViewPager.setOnClickListener {
-            val intent = Intent(applicationContext, ViewPagerActivity::class.java)
-            startActivity(intent)
-        }
-        val btnViewPagerTwo = findViewById<Button>(R.id.btnViewPagerTwoLayout)
-        btnViewPagerTwo.setOnClickListener {
-            val intent = Intent(applicationContext, ViewPagerTwoActivity::class.java)
-            startActivity(intent)
-        }
         val btnBottomNav = findViewById<Button>(R.id.btnBottomNavigationLayout)
         btnBottomNav.setOnClickListener {
             val intent = Intent(applicationContext, BottomNavigationActivity::class.java)
-            startActivity(intent)
-        }
-        val btnViewPagerRecycler = findViewById<Button>(R.id.btnViewPagerTwoRecyclerAdapter)
-        btnViewPagerRecycler.setOnClickListener {
-            val intent = Intent(applicationContext, ViewPagerThreeActivity::class.java)
-            startActivity(intent)
-        }
-        val btnExpandableListView = findViewById<Button>(R.id.btnExpandableListView)
-        btnExpandableListView.setOnClickListener {
-            val intent = Intent(applicationContext, ExpandableListViewActivity::class.java)
-            startActivity(intent)
-        }
-        val btnExpandableRecyclerView = findViewById<Button>(R.id.btnExpandableRecyclerView)
-        btnExpandableRecyclerView.setOnClickListener {
-            val intent = Intent(applicationContext, ExpandableRecyclerViewActivity::class.java)
             startActivity(intent)
         }
     }

@@ -8,6 +8,7 @@ import android.view.Gravity
 import android.widget.Button
 import android.widget.Toast
 import com.example.demoappkotlin.differentLayout.LayoutActivity
+import com.example.demoappkotlin.listView_ViewPager.ListViewActivity
 import com.example.demoappkotlin.utils.ZERO
 import kotlin.math.pow
 import kotlin.reflect.KFunction2
@@ -18,16 +19,18 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Android Ui and All Toast Button to transfer to basic kotlin Activity with Custom Toast
-        val nextbutton = findViewById<Button>(R.id.btnAllToast)
-        nextbutton.setOnClickListener {
+        val btnAllToast = findViewById<Button>(R.id.btnAllToast)
+        btnAllToast.setOnClickListener {
             val intent = Intent(applicationContext, BasicsKotlin::class.java)
             startActivity(intent)
         }
         //Android Ui Button with Normal toast
-        val androiduibtn = findViewById<Button>(R.id.btnAndroidUi)
-        androiduibtn.setOnClickListener {
-            val normalToast = Toast.makeText(applicationContext, getString(R.string.toast_normal),
-                Toast.LENGTH_SHORT)
+        val btnAndroidUI = findViewById<Button>(R.id.btnAndroidUi)
+        btnAndroidUI.setOnClickListener {
+            val normalToast = Toast.makeText(
+                applicationContext, getString(R.string.toast_normal),
+                Toast.LENGTH_SHORT
+            )
             normalToast.apply {
                 setGravity(Gravity.TOP, ZERO, ZERO)
                 show()
@@ -36,9 +39,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         //Different Layout Activity Button
-        val differentLayoutBtn = findViewById<Button>(R.id.btnDifferentLayout)
-        differentLayoutBtn.setOnClickListener {
+        val btnDifferentLayout = findViewById<Button>(R.id.btnDifferentLayout)
+        btnDifferentLayout.setOnClickListener {
             val intent = Intent(applicationContext, LayoutActivity::class.java)
+            startActivity(intent)
+        }
+        val btnListViewAndRecyclerView = findViewById<Button>(R.id.btnListViewAndRecyclerView)
+        btnListViewAndRecyclerView.setOnClickListener {
+            val intent = Intent(applicationContext, ListViewActivity::class.java)
             startActivity(intent)
         }
         //functions
