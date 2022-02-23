@@ -1,4 +1,5 @@
 package com.example.demoappkotlin
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,11 +8,12 @@ import android.view.Gravity
 import android.widget.Button
 import android.widget.Toast
 import com.example.demoappkotlin.differentLayout.LayoutActivity
-import com.example.demoappkotlin.utils.Zero
+import com.example.demoappkotlin.utils.ZERO
 import kotlin.math.pow
 import kotlin.reflect.KFunction2
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -24,12 +26,12 @@ class MainActivity : AppCompatActivity() {
         //Android Ui Button with Normal toast
         val androiduibtn = findViewById<Button>(R.id.btnAndroidUi)
         androiduibtn.setOnClickListener {
-            val normalToast = Toast.makeText(
-                    applicationContext, getString(R.string.toast_normal),
-                    Toast.LENGTH_SHORT
-            )
-            normalToast.setGravity(Gravity.TOP, Zero, Zero)
-            normalToast.show()
+            val normalToast = Toast.makeText(applicationContext, getString(R.string.toast_normal),
+                Toast.LENGTH_SHORT)
+            normalToast.apply {
+                setGravity(Gravity.TOP, ZERO, ZERO)
+                show()
+            }
             val intent = Intent(applicationContext, AndroidUI::class.java)
             startActivity(intent)
         }
@@ -39,7 +41,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, LayoutActivity::class.java)
             startActivity(intent)
         }
-        Log.d("Number", "Hello world")
         //functions
         fun sum(a: Int, b: Int): Int {
             return a + b

@@ -20,4 +20,5 @@
         android:background="@color/teal_700"
         android:text="@string/frame_layout_textView"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
 </FrameLayout>
