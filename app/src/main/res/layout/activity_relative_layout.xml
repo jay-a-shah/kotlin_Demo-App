@@ -62,7 +62,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/layout_elements_background"
-        android:entries="@array/option"
+        android:entries="@array/options"
         android:foreground="?android:attr/selectableItemBackground"
         android:padding="18dp"
         android:spinnerMode="dropdown" />

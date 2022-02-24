@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".listView_ViewPager.ViewPagerTwoActivity">
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutViewPagerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_margin="2dp" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerTwo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp" />
+
+</LinearLayout>

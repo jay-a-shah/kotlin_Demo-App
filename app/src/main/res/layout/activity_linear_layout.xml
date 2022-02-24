@@ -48,7 +48,7 @@
         android:layout_marginTop="25dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/spinner_background"
-        android:entries="@array/option"
+        android:entries="@array/options"
         android:padding="25dp" />
 
     <androidx.appcompat.widget.AppCompatEditText
