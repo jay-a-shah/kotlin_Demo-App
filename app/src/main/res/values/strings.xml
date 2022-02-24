@@ -1,31 +1,10 @@
 <resources>
     <string name="app_name">DemoAppkotlin</string>
-    <string name="all_toast_btn">Android Ui &amp; All Toasts</string>
-    <string name="android_btn">Android UI</string>
-    <string name="radiobtn_male">Male</string>
-    <string name="radiobtn_female">Female</string>
-    <string name="textview_pref">Your Prefrences</string>
-    <string name="checkbox_kotlin">Kotlin</string>
-    <string name="checkbox_ios">IOS</string>
-    <string name="checkbox_angular">Angular Js</string>
-    <string name="btn_submit">Submit</string>
     <string name="custom_toast_text">All Done</string>
     <string name="android_ui_button">New Button</string>
     <string name="basic_kotlin_gender_textview">Gender:-</string>
-    <string name="relative_layout_btn">Relative Layout</string>
-    <string name="linear_layout_btn">Linear Layout</string>
-    <string name="constraint_layout_btn">Constraint Layout</string>
-    <string name="e_mail_hint">Your E-mail</string>
-    <string name="name_hint">Your Name</string>
-    <string name="dropdown_text">Select</string>
-    <string name="multiline_hint">Feedback details</string>
-    <string name="different_layout_btn">Different Layouts</string>
     <string name="relative_layout_heading">Enter Feedback</string>
     <string name="checkbox_layout_text">Would You like to Give an Email Response</string>
-    <string name="send_feedback_btn">Send Feedback</string>
-    <string name="grid_layout_btn">Grid Layout</string>
-    <string name="frame_layout_textView">This is the Symbol of Commute</string>
-    <string name="frame_layout_btn">Frame Layout</string>
     <string name="edittext_basic_kotlin">Enter Name</string>
     <string name="edittext_email_basic_kotlin">Enter Email</string>
     <string name="edittxt_enter_phone">Enter Phone</string>
@@ -70,13 +49,7 @@
     <string name="frame_layout_btn">Frame Layout</string>
     <string name="edit_text_basic_kotlin">Enter Name</string>
     <string name="edit_text_email_basic_kotlin">Enter Email</string>
-    <string name="recycler_view_btn"><![CDATA[List View & Recycler View]]></string>
-    <string-array name="option">
-        <item>Best</item>
-        <item>Good</item>
-        <item>To Improve</item>
-        <item>Poor</item>
-    </string-array>
+    <string name="recycler_view_btn">List View &amp; Recycler View</string>
     <string-array name="fruitNames">
         <item name="fruits">Apple</item>
         <item name="fruits">Mango</item>
@@ -115,7 +88,6 @@
     <string name="tv_item_recycler_view_grid_layout">Title</string>
     <string name="tv_ietm_recycler_view_grid_layout">Desc</string>
     <string name="title_toolbar_layout">Layout Screen</string>
-    <string name="tv_registration_form">Registration Form</string>
     <string name="edittxt_registration_form">Enter Phone</string>
     <string name="menu_item_home">Home</string>
     <string name="menu_item_search">Search</string>
@@ -132,4 +104,6 @@
     <string name="title_list_view">Simple List View With Array</string>
     <string name="title_simple_list_view">Simple List View</string>
     <string name="title_list_view_activity">List View Activity</string>
+    <string name="btn_list_view_and_recycler_view">List View And Recycler View</string>
+    <string name="tv_first_fragment">First Fragment</string>
 </resources>
