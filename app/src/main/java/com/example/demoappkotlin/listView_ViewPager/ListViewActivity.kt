@@ -36,5 +36,20 @@ class ListViewActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, BottomNavigationActivity::class.java)
             startActivity(intent)
         }
+        val btnViewPager = findViewById<Button>(R.id.btnViewPager)
+        btnViewPager.setOnClickListener {
+            val intent = Intent(applicationContext, ViewPagerActivity::class.java)
+            startActivity(intent)
+        }
+        val btnViewPagerTwo = findViewById<Button>(R.id.btnViewPagerTwoLayout)
+        btnViewPagerTwo.setOnClickListener {
+            val intent = Intent(applicationContext, ViewPagerTwoActivity::class.java)
+            startActivity(intent)
+        }
+        val btnViewPagerRecycler = findViewById<Button>(R.id.btnViewPagerTwoRecyclerAdapter)
+        btnViewPagerRecycler.setOnClickListener {
+            val intent = Intent(applicationContext, ViewPagerThreeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

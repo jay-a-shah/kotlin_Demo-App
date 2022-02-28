@@ -42,8 +42,8 @@ class MyAdapter(val context: Context, val list: ArrayList<ModelList>) : BaseAdap
     }
 
     private class listViewHolder(view: View?) {
-        var title: TextView? = view?.findViewById(R.id.contact_name)
-        var desc: TextView? = view?.findViewById(R.id.contact_description)
-        var image: ImageView? = view?.findViewById(R.id.contact_icon)
+        var title: TextView? = view?.findViewById(R.id.tvContactName)
+        var desc: TextView? = view?.findViewById(R.id.tvContactDescription)
+        var image: ImageView? = view?.findViewById(R.id.contactIcon)
     }
 }

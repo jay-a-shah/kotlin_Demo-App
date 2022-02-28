@@ -8,19 +8,12 @@
     <string name="edittext_basic_kotlin">Enter Name</string>
     <string name="edittext_email_basic_kotlin">Enter Email</string>
     <string name="edittxt_enter_phone">Enter Phone</string>
-    <string name="tv_registration_form">Registration Form</string>
     <string name="tv_grid_layout">Hello</string>
     <string name="tv_different_types_of_layout">Different Types of Layout</string>
     <string name="title_registration_form">Registration Form</string>
     <string name="toast_normal">Moving Towards new Activity</string>
     <string name="txt_switch">Switch</string>
     <string name="title_toolbar">Layout Screen</string>
-    <string-array name="option">
-        <item>Best</item>
-        <item>Good</item>
-        <item>To Improve</item>
-        <item>Poor</item>
-    </string-array>
     <string name="all_toast_btn">Android Ui &amp; All Toasts</string>
     <string name="android_btn">Android UI</string>
     <string name="radiobtn_male">Male</string>
@@ -50,6 +43,12 @@
     <string name="edit_text_basic_kotlin">Enter Name</string>
     <string name="edit_text_email_basic_kotlin">Enter Email</string>
     <string name="recycler_view_btn">List View &amp; Recycler View</string>
+    <string-array name="options">
+        <item>Android</item>
+        <item>kotlin</item>
+        <item>Swift</item>
+        <item>Mongo</item>
+    </string-array>
     <string-array name="fruitNames">
         <item name="fruits">Apple</item>
         <item name="fruits">Mango</item>
@@ -88,6 +87,7 @@
     <string name="tv_item_recycler_view_grid_layout">Title</string>
     <string name="tv_ietm_recycler_view_grid_layout">Desc</string>
     <string name="title_toolbar_layout">Layout Screen</string>
+    <string name="tv_registration_form">Registration Form</string>
     <string name="edittxt_registration_form">Enter Phone</string>
     <string name="menu_item_home">Home</string>
     <string name="menu_item_search">Search</string>
@@ -106,4 +106,10 @@
     <string name="title_list_view_activity">List View Activity</string>
     <string name="btn_list_view_and_recycler_view">List View And Recycler View</string>
     <string name="tv_first_fragment">First Fragment</string>
+    <string name="tab_title_recent">Recent</string>
+    <string name="tab_title_myFavourite">My Favourite</string>
+    <string name="tab_title_viewpager_two">Hello</string>
+    <string name="tab_myfavourite_viewpager_two">My Favourites</string>
+    <string name="tab_jay_viewpager_two">Jay</string>
+    <string name="tab_dhruv_viewpager_two">Dhruv</string>
 </resources>
