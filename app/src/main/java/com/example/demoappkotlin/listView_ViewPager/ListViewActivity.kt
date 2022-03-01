@@ -51,5 +51,20 @@ class ListViewActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, ViewPagerThreeActivity::class.java)
             startActivity(intent)
         }
+        val btnRecyclerViewGridLayout = findViewById<Button>(R.id.btnRecyclerViewGridLayout)
+        btnRecyclerViewGridLayout.setOnClickListener {
+            val intent = Intent(applicationContext, RecyclerViewWithGridLayoutActivity::class.java)
+            startActivity(intent)
+        }
+        val btnExpandableListView = findViewById<Button>(R.id.btnExpandableListView)
+        btnExpandableListView.setOnClickListener {
+            val intent = Intent(applicationContext, ExpandableListViewActivity::class.java)
+            startActivity(intent)
+        }
+        val btnExpandableRecyclerView = findViewById<Button>(R.id.btnExpandableRecyclerView)
+        btnExpandableRecyclerView.setOnClickListener {
+            val intent = Intent(applicationContext, ExpandableRecyclerViewActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

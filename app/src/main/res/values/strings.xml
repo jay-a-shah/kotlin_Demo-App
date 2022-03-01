@@ -112,4 +112,11 @@
     <string name="tab_myfavourite_viewpager_two">My Favourites</string>
     <string name="tab_jay_viewpager_two">Jay</string>
     <string name="tab_dhruv_viewpager_two">Dhruv</string>
+    <string name="title_android_expandable_recycler_view">Android</string>
+    <string name="desc_android_expandable_recycler_view">Java is an Object Oriented Programming language. Java is used in all kind of applications like Mobile Applications (Android is Java based) desktop applications, web applications, client server applications, enterprise applications and many more.</string>
+    <string name="title_larvel_expandable_recycler_view">larvel</string>
+    <string name="title_mongodb_expandable_recycler_view">Mongo DB</string>
+    <string name="title_swift_expandable_recycler_view">Swift</string>
+    <string name="title_kotlin_expandable_recycler_view">Kotlin</string>
+    <string name="title_people_recycler_view_with_grid_layout">People</string>
 </resources>
