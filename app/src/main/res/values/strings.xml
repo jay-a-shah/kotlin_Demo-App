@@ -119,4 +119,7 @@
     <string name="title_swift_expandable_recycler_view">Swift</string>
     <string name="title_kotlin_expandable_recycler_view">Kotlin</string>
     <string name="title_people_recycler_view_with_grid_layout">People</string>
+    <string name="btn_fragment_one">Fragment 1</string>
+    <string name="btn_fragment_two">Fragment 2</string>
+    <string name="btn_fragment_two">Fragment 2</string>
 </resources>
