@@ -128,6 +128,11 @@
     <string name="hint_write_anything">Write Anything</string>
     <string name="label_putextra">Extra</string>
     <string name="image_type">image/*</string>
+    <string name="btn_signup_page">SignUp Page</string>
+    <string name="btn_login_page">Login Page</string>
+    <string name="btn_webview">WebView</string>
+    <string name="label_horizontal_scroll_view">Horizontal Scroll View</string>
+    <string name="hint_search_bar">Search Here</string>
     <string name="label_view_message">My Favorite</string>
     <string name="label_add_message">Add Message Fragment</string>
     <string name="label_gallery_fragment">Gallery Fragment</string>

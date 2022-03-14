@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.demoappkotlin">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DemoAppkotlin">
+        <activity
+            android:name=".WebView.WebViewActivity"
+            android:exported="false" />
         <activity
             android:name=".activityAndFragments.JetPackNavigationActivity"
             android:exported="false" />
@@ -122,9 +127,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
-                <action android:name="android.intent.action.SEND" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <data android:mimeType="image/*" />
             </intent-filter>
         </activity>
     </application>
