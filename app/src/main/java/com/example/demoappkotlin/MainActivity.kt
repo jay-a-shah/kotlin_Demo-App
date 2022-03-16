@@ -88,6 +88,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, LoginScreenWithApi::class.java)
             startActivity(intent)
         }
+        val btnLoginScreenWithApi= findViewById<Button>(R.id.btnLoginScreenWithApi)
+        btnLoginScreenWithApi.setOnClickListener {
+            val intent = Intent(applicationContext, LoginScreenWithApi::class.java)
+            startActivity(intent)
+        }
         val btnWebViewActivity = findViewById<Button>(R.id.btnWebViewActivity)
         btnWebViewActivity.setOnClickListener {
             val intent = Intent(applicationContext, WebViewActivity::class.java)

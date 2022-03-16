@@ -22,7 +22,7 @@
             android:name=".WebServices.SingleUserActivity"
             android:exported="false" />
         <activity
-            android:name=".WebServices.RecyclerViewWithApi"
+            android:name="MVP.View.View.RecyclerViewWithApiActivity"
             android:exported="false" />
         <activity
             android:name=".WebServices.LoginScreenWithApi"
