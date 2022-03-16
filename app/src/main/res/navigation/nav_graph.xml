@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/galleryFragmentJetPackNavCompose"
-        android:name="com.example.demoappkotlin.listView_ViewPager.Fragments.GalleryFragment"
+        android:name="com.example.demoappkotlin.listviewpager.Fragments.GalleryFragment"
         android:label="@string/label_gallery_fragment"
         tools:layout="@layout/fragment_gallery">
         <action
@@ -21,7 +21,7 @@
 
     <fragment
         android:id="@+id/addMessageFragmentJetPackNavCompose"
-        android:name="com.example.demoappkotlin.listView_ViewPager.Fragments.AddMessageWithSafeArgs"
+        android:name="com.example.demoappkotlin.listviewpager.Fragments.AddMessageWithSafeArgs"
         android:label="@string/label_add_message"
         tools:layout="@layout/fragment_add_message">
         <action
@@ -31,7 +31,7 @@
 
     <fragment
         android:id="@+id/viewMessageJetPackNavCompose"
-        android:name="com.example.demoappkotlin.listView_ViewPager.Fragments.ViewMessageWithSafeArgs"
+        android:name="com.example.demoappkotlin.listviewpager.Fragments.ViewMessageWithSafeArgs"
         android:label="@string/label_view_message"
         tools:layout="@layout/fragment_view_message">
         <action

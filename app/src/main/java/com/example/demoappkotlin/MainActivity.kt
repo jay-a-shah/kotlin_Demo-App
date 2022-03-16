@@ -9,13 +9,21 @@ import android.util.Log
 import android.view.Gravity
 import android.widget.Button
 import android.widget.Toast
+import com.example.demoappkotlin.mvc.View.MVCActivity
+import com.example.demoappkotlin.WebServices.DataBindingActivity
 import com.example.demoappkotlin.WebView.WebViewActivity
+import com.example.demoappkotlin.WebServices.LoginScreenWithApi
 import com.example.demoappkotlin.activityAndFragments.ActivityLifecycle
 import com.example.demoappkotlin.activityAndFragments.DataPassingActivityOne
 import com.example.demoappkotlin.activityAndFragments.ImplicitIntent
 import com.example.demoappkotlin.activityAndFragments.JetPackNavigationActivity
+import com.example.demoappkotlin.binding_adapter.BindingAdapterActivity
 import com.example.demoappkotlin.differentLayout.LayoutActivity
-import com.example.demoappkotlin.listView_ViewPager.ListViewActivity
+import com.example.demoappkotlin.listviewpager.ListViewActivity
+import com.example.demoappkotlin.mvvm.view.MVVMActivity
+import com.example.demoappkotlin.onewaytwowaydatabinding.ExampleForDataBinding
+import com.example.demoappkotlin.onewaytwowaydatabinding.tempActivity
+import com.example.demoappkotlin.permissions.RequestPermissionActivity
 import com.example.demoappkotlin.utils.ZERO
 import kotlin.math.pow
 import kotlin.reflect.KFunction2
@@ -78,11 +86,47 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(getString(R.string.key_implicit_intent),it)
             startActivity(intent)
         }
+        val btnLoginScreenWithApi= findViewById<Button>(R.id.btnLoginScreenWithApi)
+        btnLoginScreenWithApi.setOnClickListener {
+            val intent = Intent(applicationContext, LoginScreenWithApi::class.java)
+            startActivity(intent)
+        }
         val btnWebViewActivity = findViewById<Button>(R.id.btnWebViewActivity)
         btnWebViewActivity.setOnClickListener {
             val intent = Intent(applicationContext, WebViewActivity::class.java)
             startActivity(intent)
         }
+        val btnMVCActivity = findViewById<Button>(R.id.btnMVCActivity)
+       btnMVCActivity.setOnClickListener {
+            val intent = Intent(applicationContext, MVCActivity::class.java)
+            startActivity(intent)
+        }
+        val btnMVVMActivity = findViewById<Button>(R.id.btnMVVMActivity)
+        btnMVVMActivity.setOnClickListener {
+            val intent = Intent(applicationContext, MVVMActivity::class.java)
+            startActivity(intent)
+        }
+        val btnDataBinding = findViewById<Button>(R.id.btnDataBinding)
+        btnDataBinding.setOnClickListener {
+            val intent = Intent(applicationContext, DataBindingActivity::class.java)
+            startActivity(intent)
+        }
+        val btnBindingAdapter = findViewById<Button>(R.id.btnBindingAdapter)
+        btnBindingAdapter.setOnClickListener {
+            val intent = Intent(applicationContext, tempActivity::class.java)
+            startActivity(intent)
+        }
+        val btnExampleForDataBinding  = findViewById<Button>(R.id.btnExampleDataBinding)
+        btnExampleForDataBinding.setOnClickListener {
+            val intent = Intent(applicationContext, ExampleForDataBinding::class.java)
+            startActivity(intent)
+        }
+        val btnRequestPermission  = findViewById<Button>(R.id.btnPermissionRequest)
+        btnRequestPermission.setOnClickListener {
+            val intent = Intent(applicationContext, RequestPermissionActivity::class.java)
+            startActivity(intent)
+        }
+
 
         //functions
         fun sum(a: Int, b: Int): Int {

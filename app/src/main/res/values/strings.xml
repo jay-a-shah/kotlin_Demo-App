@@ -139,4 +139,26 @@
     <string name="btn_next_fragment">Next Fragment</string>
     <string name="btn_jetpack_navigation_activity">JetPack Navigation</string>
     <string name="key_implicit_intent">Key</string>
+    <string name="textview_welcome">Welcome,</string>
+    <string name="textview_forgot_password">Forgot Password?</string>
+
+    <string name="btn_login_screen_with_api">Login Screen With Api</string>
+    <string name="hint_your_password">Your Password</string>
+    <string name="textView_create_a_new_user">Create A New User</string>
+    <string name="hint_your_job">Your Job</string>
+    <string name="textView_please_wait">Please Wait ...</string>
+    <string name="tv_mvc_architecture">MVC Architecture</string>
+    <string name="btn_mvc_architecture">MVC Architecture</string>
+    <string name="tv_movie_name">Movie Name</string>
+    <string name="btn_mvvm_architecture">MVVM Architecture</string>
+    <string name="hint_your_username">Your Username</string>
+    <string name="btn_display">Display</string>
+    <string name="tv_show_email">Show Email</string>
+    <string name="tv_show_username">Show UserName</string>
+    <string name="toast_permission_granted">All Permission Granted</string>
+    <string name="toast_permission_not_granted">Permission not granted</string>
+    <string name="btn_alert_positive_btn">App Settings</string>
+    <string name="btn_alert_negative">Cancel</string>
+    <string name="title_alert_dialog">Permission Denied</string>
+    <string name="message_dialog">Permission is denied, Please allow permissions from App Settings.</string>
 </resources>
