@@ -26,7 +26,7 @@ class RecyclerViewWithApiAdapter(var list: ArrayList<UserData>, private val onCl
         val listData = list[position]
         holder.apply {
             setIsRecyclable(false)
-            firstName?.text = listData.first_name
+            firstName?.text = listData.firstName
             Picasso.get().load(listData.avatar).into(imgView)
             email?.text = listData.email
             layout.setOnClickListener {
