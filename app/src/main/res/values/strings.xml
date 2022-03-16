@@ -149,4 +149,12 @@
     <string name="toast_invalid_login">InValid Login</string>
     <string name="key_username">email</string>
     <string name="key_password">password</string>
+    <string name="tv_id">id</string>
+    <string name="tv_sign_in_to_continue">Sign in to continue!</string>
+    <string name="hint_eve_holt_reqres_in">eve.holt@reqres.in</string>
+    <string name="toast_no_user">No User</string>
+    <string name="btn_login">Login</string>
+    <string name="password_cityslicka">cityslicka</string>
+    <string name="toast_user_added">\"User Added \"</string>
+    <string name="toast_user_not_added">User No Added</string>
 </resources>

@@ -31,8 +31,7 @@ interface ApiInterface {
         }
 
         fun getRetrofitObject(): ApiInterface{
-            val retrofit =
-                Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create())
+            val retrofit = Retrofit.Builder().baseUrl(BaseURL).addConverterFactory(GsonConverterFactory.create())
                     .client(okHttpClientBuilder.build()).build().create(ApiInterface::class.java)
             return retrofit
         }

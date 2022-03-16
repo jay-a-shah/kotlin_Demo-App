@@ -27,14 +27,17 @@ import java.io.OutputStreamWriter
 import java.net.HttpURLConnection
 import java.net.URL
 
-class RecyclerViewWithApi : AppCompatActivity() {
+class RecyclerViewWithApi : AppCompatActivity(),SingleUserInterface {
     lateinit var dataClass: ModelRecyclerWithApi
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_view_with_api)
-       progressBarForRecycler.visibility = View.VISIBLE
-
+        progressBarForRecycler.visibility = View.VISIBLE
+        btnFab.setOnClickListener {
+            val intent = Intent(this,CreateUserActivity::class.java)
+            startActivity(intent)
+        }
         recyclerViewWithApi.layoutManager = LinearLayoutManager(this)
         getMethod()
     }
@@ -43,13 +46,12 @@ class RecyclerViewWithApi : AppCompatActivity() {
         GlobalScope.launch(Dispatchers.IO) {
             val url = URL("$BaseURL$ENDPOINTRECYCLERVIEW")
             val httpURLConnection = url.openConnection() as HttpURLConnection
-            httpURLConnection.setRequestProperty(
-                "Accept",
-                "application/json"
-            ) // The format of response we want to get from the server
-            httpURLConnection.requestMethod = REQUESTMETHODGET
-            httpURLConnection.doInput = true
-            httpURLConnection.doOutput = false
+            httpURLConnection.apply {
+                setRequestProperty("Accept", "application/json")
+                requestMethod = REQUESTMETHODGET
+                doInput = true
+                doOutput = false
+            } // The format of response we want to get from the server
             // Check if the connection is successful
             val responseCode = httpURLConnection.responseCode
             if (responseCode == HttpURLConnection.HTTP_OK) {
@@ -62,12 +64,19 @@ class RecyclerViewWithApi : AppCompatActivity() {
                     dataClass = gson.fromJson(response, ModelRecyclerWithApi::class.java)
                     progressBarForRecycler.visibility = View.GONE
                     Log.d("Pretty Printed JSON :", dataClass.toString())
-                    val adapter = RecyclerViewWithApiAdapter(dataClass.data)
+                    val adapter = RecyclerViewWithApiAdapter(dataClass.data,this@RecyclerViewWithApi)
                     recyclerViewWithApi.adapter = adapter
                 }
             } else {
                 Log.e("HTTPURLCONNECTION_ERROR", responseCode.toString())
             }
         }
+    }
+
+    override fun onUserClicked(position: Int) {
+      Intent(this,SingleUserActivity::class.java).apply {
+          putExtra("Selected User",position)
+          startActivity(this)
+      }
     }
 }
