@@ -128,4 +128,10 @@
     <string name="hint_write_anything">Write Anything</string>
     <string name="label_putextra">Extra</string>
     <string name="image_type">image/*</string>
+    <string name="label_view_message">My Favorite</string>
+    <string name="label_add_message">Add Message Fragment</string>
+    <string name="label_gallery_fragment">Gallery Fragment</string>
+    <string name="btn_next_fragment">Next Fragment</string>
+    <string name="btn_jetpack_navigation_activity">JetPack Navigation</string>
+    <string name="key_implicit_intent">Key</string>
 </resources>

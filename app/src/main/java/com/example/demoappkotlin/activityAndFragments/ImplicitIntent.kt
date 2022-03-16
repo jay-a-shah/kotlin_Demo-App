@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Parcelable
 import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.result.contract.ActivityResultContracts
@@ -25,7 +26,10 @@ class ImplicitIntent : AppCompatActivity() {
                 resultLauncher.launch((it))
             }
         }
+        var imageUri = intent.getParcelableExtra<Parcelable>(getString(R.string.key_implicit_intent))
+        ivphoto.setImageURI(imageUri as Uri?)
     }
+
     var resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
                 val data: Intent? = result.data
