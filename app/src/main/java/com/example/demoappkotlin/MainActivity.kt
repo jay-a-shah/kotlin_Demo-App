@@ -9,6 +9,7 @@ import android.util.Log
 import android.view.Gravity
 import android.widget.Button
 import android.widget.Toast
+import com.example.demoappkotlin.WebView.WebViewActivity
 import com.example.demoappkotlin.activityAndFragments.ActivityLifecycle
 import com.example.demoappkotlin.activityAndFragments.DataPassingActivityOne
 import com.example.demoappkotlin.activityAndFragments.ImplicitIntent
@@ -77,6 +78,12 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(getString(R.string.key_implicit_intent),it)
             startActivity(intent)
         }
+        val btnWebViewActivity = findViewById<Button>(R.id.btnWebViewActivity)
+        btnWebViewActivity.setOnClickListener {
+            val intent = Intent(applicationContext, WebViewActivity::class.java)
+            startActivity(intent)
+        }
+
         //functions
         fun sum(a: Int, b: Int): Int {
             return a + b
