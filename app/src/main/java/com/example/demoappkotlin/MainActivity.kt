@@ -10,6 +10,7 @@ import android.view.Gravity
 import android.widget.Button
 import android.widget.Toast
 import com.example.demoappkotlin.WebView.WebViewActivity
+import com.example.demoappkotlin.WebServices.LoginScreenWithApi
 import com.example.demoappkotlin.activityAndFragments.ActivityLifecycle
 import com.example.demoappkotlin.activityAndFragments.DataPassingActivityOne
 import com.example.demoappkotlin.activityAndFragments.ImplicitIntent
@@ -34,7 +35,11 @@ class MainActivity : AppCompatActivity() {
         //Android Ui Button with Normal toast
         val btnAndroidUI = findViewById<Button>(R.id.btnAndroidUi)
         btnAndroidUI.setOnClickListener {
-            val normalToast = Toast.makeText(applicationContext, getString(R.string.toast_normal), Toast.LENGTH_SHORT)
+            val normalToast = Toast.makeText(
+                applicationContext,
+                getString(R.string.toast_normal),
+                Toast.LENGTH_SHORT
+            )
             normalToast.apply {
                 setGravity(Gravity.TOP, ZERO, ZERO)
                 show()
@@ -74,8 +79,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         (intent.getParcelableExtra<Parcelable>(Intent.EXTRA_STREAM) as? Uri)?.let {
-            val intent = Intent(applicationContext,ImplicitIntent::class.java)
-            intent.putExtra(getString(R.string.key_implicit_intent),it)
+            val intent = Intent(applicationContext, ImplicitIntent::class.java)
+            intent.putExtra(getString(R.string.key_implicit_intent), it)
+            startActivity(intent)
+        }
+        val btnLoginScreenWithApi = findViewById<Button>(R.id.btnLoginScreenWithApi)
+        btnLoginScreenWithApi.setOnClickListener {
+            val intent = Intent(applicationContext, LoginScreenWithApi::class.java)
             startActivity(intent)
         }
         val btnWebViewActivity = findViewById<Button>(R.id.btnWebViewActivity)
