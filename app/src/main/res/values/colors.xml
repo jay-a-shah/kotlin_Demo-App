@@ -17,4 +17,6 @@
     <color name="light_grey">#9E9D9D</color>
     <color name="switch_color">#5C0E0E</color>
     <color name="background_light_color">#75CC92</color>
+    <color name="hint">#FFA000</color>
+    <color name="login_color">#E64A19</color>
 </resources>

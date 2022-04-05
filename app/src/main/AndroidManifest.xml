@@ -16,6 +16,19 @@
             android:name=".WebView.WebViewActivity"
             android:exported="false" />
         <activity
+            android:name=".WebServices.CreateUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebServices.SingleUserActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WebServices.RecyclerViewWithApi"
+            android:exported="false" />
+        <activity
+            android:name=".WebServices.LoginScreenWithApi"
+            android:exported="false"
+            android:theme="@style/Theme.DemoAppkotlin.NoActionBar" />
+        <activity
             android:name=".activityAndFragments.JetPackNavigationActivity"
             android:exported="false" />
         <activity
@@ -127,6 +140,9 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*" />
             </intent-filter>
         </activity>
     </application>

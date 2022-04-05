@@ -139,4 +139,14 @@
     <string name="btn_next_fragment">Next Fragment</string>
     <string name="btn_jetpack_navigation_activity">JetPack Navigation</string>
     <string name="key_implicit_intent">Key</string>
+    <string name="textview_welcome">Welcome,</string>
+    <string name="textview_forgot_password">Forgot Password?</string>
+    <string name="btn_login_screen_with_api">Login Screen With Api</string>
+    <string name="hint_your_password">Your Password</string>
+    <string name="textView_create_a_new_user">Create A New User</string>
+    <string name="hint_your_job">Your Job</string>
+    <string name="textView_please_wait">Please Wait ...</string>
+    <string name="toast_invalid_login">InValid Login</string>
+    <string name="key_username">email</string>
+    <string name="key_password">password</string>
 </resources>
