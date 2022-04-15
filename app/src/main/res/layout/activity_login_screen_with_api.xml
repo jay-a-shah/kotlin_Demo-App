@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="Sign in to continue!"
+        android:text="@string/tv_sign_in_to_continue"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         android:textStyle="normal"
@@ -75,9 +75,10 @@
             android:id="@+id/editTextEmailForLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_email_24"
             android:drawablePadding="10dp"
             android:inputType="textEmailAddress"
-            android:text="eve.holt@reqres.in"
+            android:text="@string/hint_eve_holt_reqres_in"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -104,9 +105,10 @@
             android:id="@+id/editTextPasswordForLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
             android:drawablePadding="10dp"
             android:inputType="textPassword"
-            android:text="cityslicka"
+            android:text="@string/password_cityslicka"
             android:textSize="20sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -131,7 +133,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/background_login"
         android:padding="15dp"
-        android:text="Login"
+        android:text="@string/btn_login"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="25sp"

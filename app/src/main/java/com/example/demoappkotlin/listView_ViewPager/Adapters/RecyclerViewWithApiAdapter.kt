@@ -1,6 +1,5 @@
 package com.example.demoappkotlin.listView_ViewPager.Adapters
 
-import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,13 +8,12 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.demoappkotlin.R
 import androidx.recyclerview.widget.RecyclerView
-
-import com.example.demoappkotlin.listView_ViewPager.ModelClasses.Data
+import com.example.demoappkotlin.WebServices.SingleUserInterface
 import com.example.demoappkotlin.listView_ViewPager.ModelClasses.ModelRecyclerWithApi
 
 import com.squareup.picasso.Picasso
 
-class RecyclerViewWithApiAdapter(var list: ArrayList<ModelRecyclerWithApi.Data>) :
+class RecyclerViewWithApiAdapter(var list: ArrayList<ModelRecyclerWithApi.Data>, private val onClickOfInterface: SingleUserInterface) :
     RecyclerView.Adapter<RecyclerViewWithApiAdapter.RecyclerViewWithApiHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerViewWithApiHolder {
@@ -30,7 +28,9 @@ class RecyclerViewWithApiAdapter(var list: ArrayList<ModelRecyclerWithApi.Data>)
             firstName?.text = listData.first_name
             Picasso.get().load(listData.avatar).into(imgView)
             email?.text = listData.email
-
+            layout.setOnClickListener {
+                onClickOfInterface.onUserClicked(listData.id)
+            }
         }
     }
 
@@ -42,6 +42,7 @@ class RecyclerViewWithApiAdapter(var list: ArrayList<ModelRecyclerWithApi.Data>)
         var firstName: TextView? = itemView.findViewById(R.id.firstNameInRecycler)
         var imgView: ImageView? = itemView.findViewById(R.id.imageViewInRecyclerViewWithApi)
         var email: TextView? = itemView.findViewById(R.id.emailInRecycler)
-        var layout : ConstraintLayout = itemView.findViewById(R.id.recyclerViewWithApiLayout)
+        var layout: ConstraintLayout = itemView.findViewById(R.id.recyclerViewWithApiLayout)
     }
 }
+

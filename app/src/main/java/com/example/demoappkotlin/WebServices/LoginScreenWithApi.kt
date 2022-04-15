@@ -45,8 +45,10 @@ class LoginScreenWithApi : AppCompatActivity() {
 
     private fun sendPostRequest(username: String, password: String) {
         val credential = JSONObject()
-        credential.put(getString(R.string.key_username), username)
-        credential.put(getString(R.string.key_password), password)
+        credential.apply {
+                put(getString(R.string.key_username), username)
+                put(getString(R.string.key_password), password)
+            }
         val url = URL("$BaseURL$ENDPOINTFORLOGIN")
         with(url.openConnection() as HttpURLConnection) {
             requestMethod = REQUESTMETHODPOST
@@ -80,6 +82,7 @@ class LoginScreenWithApi : AppCompatActivity() {
             getWindow()?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             requestWindowFeature(Window.FEATURE_NO_TITLE)
             setCancelable(true)
+            setContentView(R.layout.custom_progressbar)
             show()
         }
     }
