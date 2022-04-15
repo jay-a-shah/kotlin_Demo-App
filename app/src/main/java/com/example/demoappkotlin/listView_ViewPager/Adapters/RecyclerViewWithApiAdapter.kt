@@ -8,8 +8,8 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.example.demoappkotlin.R
 import androidx.recyclerview.widget.RecyclerView
+import com.example.demoappkotlin.MVP.View.Model.ModelRecyclerWithApi
 import com.example.demoappkotlin.WebServices.SingleUserInterface
-import com.example.demoappkotlin.listView_ViewPager.ModelClasses.ModelRecyclerWithApi
 
 import com.squareup.picasso.Picasso
 

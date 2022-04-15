@@ -27,7 +27,7 @@ import java.net.URL
 class RecyclerViewWithApi : AppCompatActivity(), SingleUserInterface , IRecyclerView {
 
     lateinit var dataClass: ModelRecyclerWithApi
-   // private lateinit var newList: ArrayList<ModelRecyclerWithApi.Data>
+   //private lateinit var newList: ArrayList<ModelRecyclerWithApi.Data>
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_recycler_view_with_api)
@@ -89,7 +89,7 @@ class RecyclerViewWithApi : AppCompatActivity(), SingleUserInterface , IRecycler
     }
 
     override fun createUserActivity() {
-        btnfab.setOnClickListener {
+        btnFab.setOnClickListener {
             val intent = Intent(this, CreateUserActivity::class.java)
             startActivity(intent)
         }

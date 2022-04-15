@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.demoappkotlin.MVC.View.LoginScreenView
+import com.example.demoappkotlin.MVP.View.View.RecyclerViewWithApi
 import com.example.demoappkotlin.R
 import com.example.demoappkotlin.utils.BaseURL
 import kotlinx.android.synthetic.main.activity_login_screen_with_api.*
@@ -53,7 +54,7 @@ class LoginScreenWithApi : AppCompatActivity(){
             println("cred: $credential")
             println("Response Code: $responseCode")
             if (responseCode == 200) {
-                val intent = Intent(applicationContext, RecyclerViewWithApiActivity::class.java)
+                val intent = Intent(applicationContext, RecyclerViewWithApi::class.java)
                 startActivity(intent)
                 finish()
                 dialog.dismiss()

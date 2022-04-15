@@ -83,11 +83,6 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra(getString(R.string.key_implicit_intent), it)
             startActivity(intent)
         }
-        val btnLoginScreenWithApi = findViewById<Button>(R.id.btnLoginScreenWithApi)
-        btnLoginScreenWithApi.setOnClickListener {
-            val intent = Intent(applicationContext, LoginScreenWithApi::class.java)
-            startActivity(intent)
-        }
         val btnLoginScreenWithApi= findViewById<Button>(R.id.btnLoginScreenWithApi)
         btnLoginScreenWithApi.setOnClickListener {
             val intent = Intent(applicationContext, LoginScreenWithApi::class.java)
