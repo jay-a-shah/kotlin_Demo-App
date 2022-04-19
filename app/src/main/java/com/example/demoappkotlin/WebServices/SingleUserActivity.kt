@@ -7,7 +7,7 @@ import android.util.Log
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.demoappkotlin.R
-import com.example.demoappkotlin.listView_ViewPager.ModelClasses.ModelSingleUserApi
+import com.example.demoappkotlin.listviewpager.modelclasses.ModelSingleUserApi
 import com.example.demoappkotlin.utils.BaseURL
 import com.example.demoappkotlin.utils.ZERO
 import com.localebro.okhttpprofiler.OkHttpProfilerInterceptor

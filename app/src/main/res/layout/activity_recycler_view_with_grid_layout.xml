@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/light_grey"
-    tools:context=".listView_ViewPager.RecyclerViewWithGridLayoutActivity">
+    tools:context=".listviewpager.RecyclerViewWithGridLayoutActivity">
 
 </androidx.recyclerview.widget.RecyclerView>
 

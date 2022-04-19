@@ -190,7 +190,76 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btnWebViewActivity" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMVCActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_border"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/btn_mvc_architecture"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/text_color_mainActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnLoginScreenWithApi" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnMVVMActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_border"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/btn_mvvm_architecture"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/text_color_mainActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnMVCActivity" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDataBinding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_border"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Data Binding"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/text_color_mainActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnMVVMActivity" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBindingAdapter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_border"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="Binding Adpater"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/text_color_mainActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnDataBinding" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

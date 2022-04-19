@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.demoappkotlin.R
-import com.example.demoappkotlin.listView_ViewPager.ModelClasses.CreateUser
+import com.example.demoappkotlin.listviewpager.modelclasses.CreateUser
 import kotlinx.android.synthetic.main.activity_create_user.*
 import retrofit2.Call
 import retrofit2.Callback

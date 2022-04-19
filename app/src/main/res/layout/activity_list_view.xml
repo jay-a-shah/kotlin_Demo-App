@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_margin="10dp"
         android:orientation="vertical"
-        tools:context=".listView_ViewPager.ListViewActivity">
+        tools:context=".listviewpager.ListViewActivity">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnListViewOne"
