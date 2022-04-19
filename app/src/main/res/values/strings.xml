@@ -157,4 +157,8 @@
     <string name="password_cityslicka">cityslicka</string>
     <string name="toast_user_added">\"User Added \"</string>
     <string name="toast_user_not_added">User No Added</string>
+    <string name="tv_mvc_architecture">MVC Architecture</string>
+    <string name="btn_mvc_architecture">MVC Architecture</string>
+    <string name="tv_movie_name">Movie Name</string>
+    <string name="btn_mvvm_architecture">MVVM Architecture</string>
 </resources>

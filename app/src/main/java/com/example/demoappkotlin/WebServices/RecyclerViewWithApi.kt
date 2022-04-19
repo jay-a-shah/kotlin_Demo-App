@@ -6,10 +6,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.demoappkotlin.MVP.View.Model.ModelRecyclerWithApi
 import com.example.demoappkotlin.R
-import com.example.demoappkotlin.listView_ViewPager.Adapters.RecyclerViewWithApiAdapter
-import com.example.demoappkotlin.listView_ViewPager.ModelClasses.Data
-import com.example.demoappkotlin.listView_ViewPager.ModelClasses.ModelRecyclerWithApi
+import com.example.demoappkotlin.listviewpager.Adapters.RecyclerViewWithApiAdapter
 import com.example.demoappkotlin.utils.BaseURL
 import com.example.demoappkotlin.utils.ENDPOINTRECYCLERVIEW
 import com.example.demoappkotlin.utils.REQUESTMETHODGET
@@ -20,10 +19,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import retrofit2.Retrofit
-import java.io.BufferedReader
-import java.io.InputStreamReader
-import java.io.OutputStreamWriter
 import java.net.HttpURLConnection
 import java.net.URL
 
@@ -64,7 +59,7 @@ class RecyclerViewWithApi : AppCompatActivity(),SingleUserInterface {
                     dataClass = gson.fromJson(response, ModelRecyclerWithApi::class.java)
                     progressBarForRecycler.visibility = View.GONE
                     Log.d("Pretty Printed JSON :", dataClass.toString())
-                    val adapter = RecyclerViewWithApiAdapter(dataClass.data,this@RecyclerViewWithApi)
+                    val adapter = dataClass.data?.let { RecyclerViewWithApiAdapter(it, this@RecyclerViewWithApi)}
                     recyclerViewWithApi.adapter = adapter
                 }
             } else {
