@@ -50,7 +50,6 @@ class RequestPermissionActivity : AppCompatActivity() {
                         Toast.makeText(this, getString(R.string.toast_permission_granted), Toast.LENGTH_LONG).show()
                     } else
                         showPermissionDeniedDialog()
-
                 }
             }
         }
@@ -58,12 +57,9 @@ class RequestPermissionActivity : AppCompatActivity() {
 
     private val activityResultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             checkPermission()
-            if (result.resultCode != Activity.RESULT_OK) {
-                Log.d("permission", getString(R.string.toast_permission_not_granted))
-            }
         }
 
-    fun showPermissionDeniedDialog() {
+    private fun showPermissionDeniedDialog() {
         val builder = AlertDialog.Builder(this)
         var alertDialog: AlertDialog? = null
               builder.apply {
