@@ -126,6 +126,16 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(applicationContext, RequestPermissionActivity::class.java)
             startActivity(intent)
         }
+        val btnDesignSupport = findViewById<Button>(R.id.btnDesignSupportLibrary)
+        btnDesignSupport.setOnClickListener {
+            val intent = Intent(applicationContext, DesignLibraryActivity::class.java)
+            startActivity(intent)
+        }
+        val btnCoordinatorLayout = findViewById<Button>(R.id.btnCoordinatorLayout)
+        btnCoordinatorLayout.setOnClickListener {
+            val intent = Intent(applicationContext, CoordinatorLayoutActivty::class.java)
+            startActivity(intent)
+        }
 
 
         //functions

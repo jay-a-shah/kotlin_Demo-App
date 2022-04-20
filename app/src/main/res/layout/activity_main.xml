@@ -289,7 +289,39 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/btnExampleDataBinding" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDesignSupportLibrary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_border"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/btn_design_support"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/text_color_mainActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnPermissionRequest" />
 
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCoordinatorLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button_border"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:text="@string/btn_coordinator_layout"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@color/text_color_mainActivity"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnDesignSupportLibrary" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
