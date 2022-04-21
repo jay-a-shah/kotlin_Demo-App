@@ -30,6 +30,7 @@ class DesignLibraryActivity : AppCompatActivity() {
                     Intent(this,CoordinatorLayoutActivty::class.java).apply {
                         startActivity(this)
                     }
+                    drawerLayout.closeDrawer(GravityCompat.START)
                     true
                 }
                 R.id.people -> {
@@ -45,16 +46,10 @@ class DesignLibraryActivity : AppCompatActivity() {
                 }
             }
         }
-
     }
 
     override fun onSupportNavigateUp(): Boolean {
         this.drawerLayout.openDrawer(navView)
-//        if (this.drawerLayout.isDrawerOpen(GravityCompat.START)){
-//           this.drawerLayout.closeDrawer(GravityCompat.START)
-//       } else {
-//           super.onBackPressed()
-//       }
         return true
     }
 

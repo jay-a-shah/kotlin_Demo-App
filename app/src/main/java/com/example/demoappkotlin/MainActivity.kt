@@ -188,6 +188,7 @@ class MainActivity : AppCompatActivity() {
         }
         //while Loop
         val f1 = 2
+
         var f2 = 1
         while (f2 <= 10) {
             val f3 = f1 * f2
@@ -216,7 +217,7 @@ class MainActivity : AppCompatActivity() {
         open class Mobile() {
             val name: String = ""
             val size = 2
-            open fun display() = Log.d("Overiding", "In Parent Class")
+             open fun display() = Log.d("Overiding", "In Parent Class")
         }
 
         class Oneplus : Mobile() {

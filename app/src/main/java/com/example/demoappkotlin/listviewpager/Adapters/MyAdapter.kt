@@ -12,7 +12,7 @@ import com.example.demoappkotlin.listviewpager.modelclasses.ModelList
 import com.example.demoappkotlin.utils.ZERO
 
 class MyAdapter(val context: Context, val list: ArrayList<ModelList>) : BaseAdapter() {
-    private var contactList = arrayListOf<ModelList>()
+   private var contactList = arrayListOf<ModelList>()
 
     init {
         contactList = list
