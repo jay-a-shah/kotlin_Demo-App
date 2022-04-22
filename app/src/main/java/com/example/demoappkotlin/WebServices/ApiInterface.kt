@@ -1,6 +1,5 @@
 package com.example.demoappkotlin.WebServices
 
-import com.example.demoappkotlin.utils.BaseURL
 import com.localebro.okhttpprofiler.OkHttpProfilerInterceptor
 import okhttp3.OkHttpClient
 import retrofit2.Call
@@ -13,6 +12,7 @@ import retrofit2.http.Path
 import com.example.demoappkotlin.BuildConfig
 import com.example.demoappkotlin.listviewpager.modelclasses.CreateUser
 import com.example.demoappkotlin.listviewpager.modelclasses.ModelSingleUserApi
+import com.example.demoappkotlin.utils.BaseURL
 import com.example.demoappkotlin.utils.ENDPOINTCREATEUSER
 import com.example.demoappkotlin.utils.ENDPOINTSINGLEUSER
 

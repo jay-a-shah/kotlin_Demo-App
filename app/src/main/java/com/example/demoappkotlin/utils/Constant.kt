@@ -15,3 +15,8 @@ const val ENDPOINTCREATEUSER = "/api/users"
 const val ENDPOINTRECYCLERVIEW = "/api/users?page=2"
 const val REQUESTMETHODGET = "GET"
 const val RESPONSECODE = 200
+const val NEGATIVEONE = -1
+const val BASEURLMOVIELIST = "https://howtodoandroid.com/"
+const val MOVIELISTJSON = "movielist.json"
+const val IntentPutKey = "Selected User"
+const val TagMainActivity = "MainActivity"

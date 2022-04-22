@@ -161,4 +161,15 @@
     <string name="btn_mvc_architecture">MVC Architecture</string>
     <string name="tv_movie_name">Movie Name</string>
     <string name="btn_mvvm_architecture">MVVM Architecture</string>
+    <string name="toast_enter_email">Please Enter Email</string>
+    <string name="toast_enter_valid_email">\" Please Enter a Valid Email\"</string>
+    <string name="toast_enter_password">Please Enter a Password</string>
+    <string name="toast_login_successful">Login Successfull</string>
+    <string name="toast_login_failure">Login Failure</string>
+    <string name="toast_data_is_not_there">Data is Not There</string>
+    <string name="image_url">https://cdn.britannica.com/86/170586-050-AB7FEFAE/Taj-Mahal-Agra-India.jpg</string>
+    <string name="name_jay">Jay</string>
+    <string name="sample_text">hello</string>
+    <string name="newSample_text">Jay</string>
+    <string name="Log_msg">\"onCreate: \"</string>
 </resources>
