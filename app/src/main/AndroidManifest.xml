@@ -20,9 +20,6 @@
             android:name=".CoordinatorLayoutActivty"
             android:exported="false" />
         <activity
-            android:name=".CoordinatorLayoutActivity"
-            android:exported="false" />
-        <activity
             android:name=".DesignLibraryActivity"
             android:exported="false" />
         <activity
