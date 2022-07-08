@@ -2,31 +2,34 @@ package com.example.demoappkotlin
 
 import android.content.Intent
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Parcelable
 import android.util.Log
 import android.view.Gravity
 import android.widget.Button
 import android.widget.Toast
-import com.example.demoappkotlin.mvc.View.MVCActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.example.demoappkotlin.WebServices.DataBindingActivity
-import com.example.demoappkotlin.WebView.WebViewActivity
 import com.example.demoappkotlin.WebServices.LoginScreenWithApi
+import com.example.demoappkotlin.WebView.WebViewActivity
 import com.example.demoappkotlin.activityAndFragments.ActivityLifecycle
 import com.example.demoappkotlin.activityAndFragments.DataPassingActivityOne
 import com.example.demoappkotlin.activityAndFragments.ImplicitIntent
 import com.example.demoappkotlin.activityAndFragments.JetPackNavigationActivity
-import com.example.demoappkotlin.binding_adapter.BindingAdapterActivity
 import com.example.demoappkotlin.differentLayout.LayoutActivity
 import com.example.demoappkotlin.listviewpager.ListViewActivity
+import com.example.demoappkotlin.mvc.View.MVCActivity
 import com.example.demoappkotlin.mvvm.view.MVVMActivity
 import com.example.demoappkotlin.onewaytwowaydatabinding.ExampleForDataBinding
 import com.example.demoappkotlin.onewaytwowaydatabinding.tempActivity
 import com.example.demoappkotlin.permissions.RequestPermissionActivity
 import com.example.demoappkotlin.utils.ZERO
+import com.microsoft.appcenter.AppCenter
+import com.microsoft.appcenter.analytics.Analytics
+import com.microsoft.appcenter.crashes.Crashes
 import kotlin.math.pow
 import kotlin.reflect.KFunction2
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -34,6 +37,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //Android Ui and All Toast Button to transfer to basic kotlin Activity with Custom Toast
+        AppCenter.start(
+            application, "11706189-ce24-4f27-958c-3122833d39e8",
+            Analytics::class.java, Crashes::class.java
+        )
         val btnAllToast = findViewById<Button>(R.id.btnAllToast)
         btnAllToast.setOnClickListener {
             val intent = Intent(applicationContext, BasicsKotlin::class.java)
